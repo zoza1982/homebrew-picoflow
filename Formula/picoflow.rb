@@ -7,10 +7,10 @@ class Picoflow < Formula
   on_macos do
     if Hardware::CPU.arm?
       url "https://github.com/zoza1982/picoflow/releases/download/v0.1.1/picoflow-v0.1.1-darwin-arm64-macos.tar.gz"
-      sha256 "0ca7b8fed401d657ba6d8e87137476c7f73691148564a4112eaef7ebe3532219"
+      sha256 "39fc48c73571ccb11c308b54ea72e5f961c027029a414124fe55bda4b9129b71"
     else
       url "https://github.com/zoza1982/picoflow/releases/download/v0.1.1/picoflow-v0.1.1-darwin-x86_64-macos.tar.gz"
-      sha256 "7328e2cf393d77714bd160caf175778dd6b838c18b56788fd9fd3f2a422be512"
+      sha256 "439f4f4d693a492fd538a1fb28de21ea72d269c75cf084213c1fb9a8713ccdbe"
     end
   end
 
@@ -18,14 +18,14 @@ class Picoflow < Formula
     if Hardware::CPU.arm?
       if Hardware::CPU.is_64_bit?
         url "https://github.com/zoza1982/picoflow/releases/download/v0.1.1/picoflow-v0.1.1-arm64-linux.tar.gz"
-        sha256 "a9941d118fe6aa810524c536e23dc2474e00907efb80552e9d0bf3b1f9d397dd"
+        sha256 "cb0b23167b35805923689cba63ad3d27077b350b2412cbeaea8ec43e5f59f515"
       else
         url "https://github.com/zoza1982/picoflow/releases/download/v0.1.1/picoflow-v0.1.1-arm32-linux.tar.gz"
-        sha256 "e640273871805cf477e15f35a6d54c416b33b8f3c8f91b1c469e75cc4d5940f0"
+        sha256 "2053d2eff9dcd39e7ca5257900c8400d979ae33b20e7134c2b5abf0ed59906d4"
       end
     else
       url "https://github.com/zoza1982/picoflow/releases/download/v0.1.1/picoflow-v0.1.1-x86_64-linux.tar.gz"
-      sha256 "3160df7dc6ee1f5f31fab45e32c926a7183f36db2a4ef9f3b4b374130799fe5e"
+      sha256 "a242c096740fea17dc073b00bd05dcd770371caceedb3d2da15f5de508b2b85c"
     end
   end
 
