@@ -1,31 +1,31 @@
 class Picoflow < Formula
   desc "Lightweight DAG workflow orchestrator for edge devices"
   homepage "https://github.com/zoza1982/picoflow"
-  version "0.1.1"
+  version "0.1.2"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/zoza1982/picoflow/releases/download/v0.1.1/picoflow-v0.1.1-darwin-arm64-macos.tar.gz"
-      sha256 "39fc48c73571ccb11c308b54ea72e5f961c027029a414124fe55bda4b9129b71"
+      url "https://github.com/zoza1982/picoflow/releases/download/v0.1.2/picoflow-v0.1.2-darwin-arm64-macos.tar.gz"
+      sha256 "ba6de2d86fd4f48104d219cae24161d775158e6609491a53d83f779f15120cc4"
     else
-      url "https://github.com/zoza1982/picoflow/releases/download/v0.1.1/picoflow-v0.1.1-darwin-x86_64-macos.tar.gz"
-      sha256 "439f4f4d693a492fd538a1fb28de21ea72d269c75cf084213c1fb9a8713ccdbe"
+      url "https://github.com/zoza1982/picoflow/releases/download/v0.1.2/picoflow-v0.1.2-darwin-x86_64-macos.tar.gz"
+      sha256 "7ae0c7737d24b3b4b3b5eb381e905be3ac25532db3574a55092b276c8c50ae3c"
     end
   end
 
   on_linux do
     if Hardware::CPU.arm?
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/zoza1982/picoflow/releases/download/v0.1.1/picoflow-v0.1.1-arm64-linux.tar.gz"
-        sha256 "cb0b23167b35805923689cba63ad3d27077b350b2412cbeaea8ec43e5f59f515"
+        url "https://github.com/zoza1982/picoflow/releases/download/v0.1.2/picoflow-v0.1.2-arm64-linux.tar.gz"
+        sha256 "0f4797f5816e89b51811779ada90764335e172b6d78e512ef2eb5e772b4dfd76"
       else
-        url "https://github.com/zoza1982/picoflow/releases/download/v0.1.1/picoflow-v0.1.1-arm32-linux.tar.gz"
-        sha256 "2053d2eff9dcd39e7ca5257900c8400d979ae33b20e7134c2b5abf0ed59906d4"
+        url "https://github.com/zoza1982/picoflow/releases/download/v0.1.2/picoflow-v0.1.2-arm32-linux.tar.gz"
+        sha256 "57f04c796d22ec8fa8c5cc45bb1cf87aaab482e321ea3d2c748de2ff01ff6eb3"
       end
     else
-      url "https://github.com/zoza1982/picoflow/releases/download/v0.1.1/picoflow-v0.1.1-x86_64-linux.tar.gz"
-      sha256 "a242c096740fea17dc073b00bd05dcd770371caceedb3d2da15f5de508b2b85c"
+      url "https://github.com/zoza1982/picoflow/releases/download/v0.1.2/picoflow-v0.1.2-x86_64-linux.tar.gz"
+      sha256 "d3289ee929ebd5afe223999b0b8014e5c036c31c6d351c7997dd14d2622c425c"
     end
   end
 
