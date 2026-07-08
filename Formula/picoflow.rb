@@ -1,7 +1,6 @@
 class Picoflow < Formula
   desc "Lightweight DAG workflow orchestrator for edge devices"
   homepage "https://github.com/zoza1982/picoflow"
-  version "0.1.2"
   license "MIT"
 
   on_macos do
